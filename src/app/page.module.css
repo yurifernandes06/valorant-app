@@ -1,0 +1,136 @@
+.background {
+  background-image: url('https://wallpapers.com/images/hd/best-valorant-background-1920-x-1080-m2rb0w3dox5an9fb.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  margin: 15px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--primary-color);
+}
+
+.card p.description {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--white);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 70, 85, 0.2), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card .role {
+  background: linear-gradient(135deg, var(--primary-color), var(--gradient-color));
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  margin: 10px auto;
+  border-radius: 25px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card .role:hover {
+  background: linear-gradient(135deg, var(--gradient-color), var(--primary-color));
+  transform: scale(1.05);
+}
+
+.card h3,
+.card p,
+.card .role {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .background {
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  .card h3 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}

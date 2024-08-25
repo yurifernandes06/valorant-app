@@ -1,0 +1,144 @@
+.container {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://wallpapers.com/images/hd/best-valorant-background-1920-x-1080-m2rb0w3dox5an9fb.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1.5px;
+}
+
+.skinsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skinItem {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.skinItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.skinImage {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-bottom: 2px solid var(--border-color);
+  z-index: 2;
+  position: relative;
+}
+
+.skinItem h2 {
+  padding: 10px;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  z-index: 2;
+  position: relative;
+  font-weight: 600;
+}
+
+.skinItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .skinsList {
+    gap: 15px;
+  }
+  
+  .skinItem {
+    width: 220px;
+  }
+  
+  .skinItem h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .skinsList {
+    gap: 10px;
+  }
+  
+  .skinItem {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .skinItem h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .skinsList {
+    gap: 5px;
+  }
+  
+  .skinItem {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .skinImage {
+    height: 150px;
+  }
+  
+  .skinItem h2 {
+    font-size: 1rem;
+  }
+}
