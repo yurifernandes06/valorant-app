@@ -10,7 +10,8 @@ Este é um aplicativo web desenvolvido com Next.js, React e TypeScript, que util
 - **pnpm**: Gerenciador de pacotes para JavaScript.
 - **API do Valorant**: Fornece dados sobre agentes, mapas, skins, etc.
 
-## Configuração do Ambiente
+## Vercel
+Confira a [página do projeto no Vercel](https://your-project-name.vercel.app).
 
 ### Pré-requisitos
 
