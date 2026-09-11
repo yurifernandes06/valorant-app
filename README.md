@@ -1,6 +1,6 @@
 # 🎯 Valorant App
 
-Aplicativo web desenvolvido com **Next.js**, **React** e **TypeScript**, que consome a API pública do Valorant para exibir informações sobre agentes, mapas e skins do jogo.
+A web app built with **Next.js**, **React** and **TypeScript**, consuming the public Valorant API to display information about agents, maps and skins.
 
 🔗 **Demo:** [valorant-app-chi.vercel.app](https://valorant-app-chi.vercel.app)
 
@@ -10,75 +10,75 @@ Aplicativo web desenvolvido com **Next.js**, **React** e **TypeScript**, que con
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 </p>
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tech stack
 
-- **[Next.js](https://nextjs.org/)** — framework React com renderização no servidor e geração de sites estáticos
-- **[React](https://react.dev/)** — biblioteca para construção de interfaces
-- **[TypeScript](https://www.typescriptlang.org/)** — superset do JavaScript com tipagem estática
-- **[pnpm](https://pnpm.io/)** — gerenciador de pacotes
-- **[Valorant API](https://valorant-api.com/)** — dados sobre agentes, mapas e skins
-- **[Vercel](https://vercel.com/)** — deploy da aplicação
+- **[Next.js](https://nextjs.org/)** — React framework with server-side rendering and static site generation
+- **[React](https://react.dev/)** — library for building user interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** — JavaScript superset with static typing
+- **[pnpm](https://pnpm.io/)** — package manager
+- **[Valorant API](https://valorant-api.com/)** — data on agents, maps and skins
+- **[Vercel](https://vercel.com/)** — deployment
 
-## ✨ Funcionalidades
+## ✨ Features
 
-| Página | Rota | Descrição |
+| Page | Route | Description |
 |---|---|---|
-| Home | `/` | Página inicial com destaque dos personagens |
-| Agents | `/agents` | Informações sobre os agentes do Valorant |
-| Maps | `/maps` | Detalhes sobre os mapas do jogo |
-| Skins | `/skins` | Skins das armas |
+| Home | `/` | Landing page featuring the characters |
+| Agents | `/agents` | Information about Valorant's agents |
+| Maps | `/maps` | Details about the game's maps |
+| Skins | `/skins` | Weapon skins |
 
-## 🚀 Como rodar o projeto
+## 🚀 Getting started
 
-### Pré-requisitos
+### Prerequisites
 
-- [Node.js](https://nodejs.org/) (recomendado via [asdf](https://asdf-vm.com/))
-- [pnpm](https://pnpm.io/) instalado globalmente
+- [Node.js](https://nodejs.org/) (recommended via [asdf](https://asdf-vm.com/))
+- [pnpm](https://pnpm.io/) installed globally
 
-### Passo a passo
+### Setup
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/yurifernandes06/valorant-app.git
 cd valorant-app
 
-# Instale as dependências
+# Install dependencies
 pnpm install
 ```
 
-Crie um arquivo `.env.local` na raiz do projeto com:
+Create a `.env.local` file in the project root with:
 
 ```env
 NEXT_PUBLIC_API_URL=https://dash.valorant-api.com/
 ```
 
 ```bash
-# Inicie o servidor de desenvolvimento
+# Start the development server
 pnpm dev
 ```
 
-A aplicação estará disponível em `http://localhost:3000`.
+The app will be available at `http://localhost:3000`.
 
-Para rodar os testes:
+To run the tests:
 
 ```bash
 pnpm test
 ```
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-1. Faça um fork do repositório
-2. Crie uma branch para sua feature (`git checkout -b minha-nova-feature`)
-3. Faça commit das suas alterações (`git commit -m "Descrição das alterações"`)
-4. Envie para o repositório (`git push origin minha-nova-feature`)
-5. Abra um Pull Request
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -m "Description of changes"`)
+4. Push to the repository (`git push origin my-new-feature`)
+5. Open a Pull Request
 
-## 📚 Recursos adicionais
+## 📚 Additional resources
 
-- [Documentação da API do Valorant](https://valorant-api.com/)
-- [Documentação do Next.js](https://nextjs.org/docs)
-- [Documentação do React](https://react.dev/)
+- [Valorant API documentation](https://valorant-api.com/)
+- [Next.js documentation](https://nextjs.org/docs)
+- [React documentation](https://react.dev/)
 
-## 📄 Licença
+## 📄 License
 
-Este projeto é licenciado sob a [MIT License](./LICENSE).
+This project is licensed under the [MIT License](./LICENSE).
